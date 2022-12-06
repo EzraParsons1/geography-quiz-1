@@ -1,0 +1,149 @@
+/* https://coolors.co/916953-1c77c3-f2d492-27187e-ccc9e7 */
+/* font-family: 'Macondo', cursive;
+   font-family: 'Roboto', sans-serif; */
+
+/* Start of Mobile/Default Version */
+
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color:#27187E;
+}
+
+/* Style the header */
+
+
+/* The grid container */
+.grid-container {
+  display: grid;
+  border:3px solid #F2D492;
+  grid-template-areas: 
+      'header' 
+      'left' 
+      'right' 
+      'footer1'
+	    'footer2';
+      
+}
+
+.header {
+  grid-area: header;
+  background-color: #CCC9E7;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+}
+  
+ 
+
+.left,
+.right,
+.header,
+.footer1, footer2 {
+  
+  display:grid;
+  justify-items:center;  
+  align-items:center;  
+}
+
+/* Style the left column */
+.left {
+  grid-area: left;
+  background-color: #916953;
+}
+
+
+/* Style the right column */
+.right {
+  grid-area: right;
+  background-color: #916953;
+}
+
+/* Style the footer */
+.footer1 {
+  grid-area: footer1;
+  background-color: #CCC9E7;
+  padding: 10px;
+  text-align: center;
+}
+
+.footer2 {
+  grid-area: footer2;
+  background-color:#CCC9E7;
+  padding: 10px;
+  text-align: center;
+}
+
+
+#question {
+  font-size: 2em;
+  font-weight:bold;
+  color:#1c77c3;
+  font-family: 'Macondo', cursive;
+}
+
+#question:hover{
+  cursor: default;
+}
+
+*:hover{
+  cursor: default;
+}
+
+.options {
+   font-size:2em;
+   padding:1em;
+   color:#27187E;
+}
+
+#lightbox {
+  position:fixed;
+  top:0px;
+  left:0px;
+  width:100%;
+  height:100%;
+  background-color:rgba(0,0,0,0.8);   
+}
+
+#message {
+    width:80%;
+    min-width:400px;
+    padding:20px;
+    background-color:#27187E;
+    color:#1c77c3;
+    text-align:center;
+    font-size:4em;
+    font-weight:bold;
+    /* vertically and horizontally center the text */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+h1{
+  color:#FFFFFF;
+  font-family: 'Macondo', cursive;
+}
+
+div:hover{
+  cursor: pointer;
+}
+
+/* end of Mobile/Default Version */
+
+
+/* Desktop Version */
+@media (min-width: 768px) {
+	
+ .grid-container  {
+    grid-template-areas: 
+      'header header header header' 
+      'left left right right' 
+      'footer1 footer1 footer2 footer2';
+  }
+
+}/* end of Media Query / Desktop Version */

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel='icon' href='icons/favicon.png' type='image/x-icon'/>
+    <link rel="manifest" href="manifest.json"> 
+    <title>JS Quiz Assignment</title>
+	<script src="quizproject.js"></script>
+	<link rel="stylesheet" type="text/css" href="quizproject.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="manifest" href="manifest.json">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Macondo&family=Roboto:wght@200&display=swap" rel="stylesheet">
+  
+</head>
+<body onLoad="loadQuestion()">
+
+<section id="lightbox" onclick="closeLightBox()">
+   <div id="message">This is the message</div>
+</section>
+
+<h1>Geography Quiz</h1>
+
+<main class="grid-container">
+  <header class="header">
+    <div id="question">The Question</div>
+  </header>
+  
+  <aside class="left">
+    <div>
+      <div class="options" id="a" onclick="markIt('a')">A.</div>
+      <div class="options" id="b" onclick="markIt('b')">B.</div>
+      <div class="options" id="c" onclick="markIt('c')">C.</div>
+      <div class="options" id="d" onclick="markIt('d')">D.</div>
+    </div>
+  </aside> 
+
+  
+  <figure class="right"> <img id="image" alt=""></figure>
+  
+  <footer class="footer1">
+    <div id="hint" onclick="hint()">Click for a hint</div>
+    <div onclick="lifeline()">Click for 50/50 lifeline</div>
+    <p id="uses">Uses: 2</p>
+  </footer>
+  
+  <footer class="footer2">
+    <p>Score  <span id="score"></span></p>
+  </footer>
+</main>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
